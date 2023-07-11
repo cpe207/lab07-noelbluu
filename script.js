@@ -41,5 +41,5 @@ firstNameInput.onkeyup = () => {
       "" === lastNameInput.value ? lastNameInput.classList.add("is-invalid") : (lastNameInput.classList.add("is-valid"), isLastNameOk = !0),
       !1 === validateEmail(emailInput.value) ? emailInput.classList.add("is-invalid") : (emailInput.classList.add("is-valid"), isEmailOk = !0),
       passwordInput.value.length >= 6 ? (passwordInput.classList.add("is-valid"), isPasswordOk = !0) : passwordInput.classList.add("is-invalid"),
-      isFirstNameOk && isLastNameOk && isEmailOk && isPasswordOk && alert("Registered successfully")
+      isFirstNameOk && isLastNameOk && isEmailOk && isPasswordOk && alert("Registered successfully");
   };
