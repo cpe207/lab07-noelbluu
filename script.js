@@ -37,9 +37,9 @@ submitBtn.onclick = () => {
   let isEmailOk = !1;
   let isPasswordOk = !1;
 
-  firstNameInput.value === "" ? firstNameInput.classList.add("is-invalid") : (firstNameInput.classList.add("is-valid"), isFirstNameOk = !0),
-    lastNameInput.value === "" ? lastNameInput.classList.add("is-invalid") : (lastNameInput.classList.add("is-valid"), isLastNameOk = !0),
-    validateEmail(emailInput.value) === !1 ? emailInput.classList.add("is-invalid") : (emailInput.classList.add("is-valid"), isEmailOk = !0),
-    passwordInput.value.length >= 6 ? (passwordInput.classList.add("is-valid"), isPasswordOk = !0) : passwordInput.classList.add("is-invalid"),
-    isFirstNameOk && isLastNameOk && isEmailOk && isPasswordOk && alert("Registered successfully");
+  firstNameInput.value === "" ? firstNameInput.classList.add("is-invalid") : (firstNameInput.classList.add("is-valid"), isFirstNameOk = !0);
+  lastNameInput.value === "" ? lastNameInput.classList.add("is-invalid") : (lastNameInput.classList.add("is-valid"), isLastNameOk = !0);
+  validateEmail(emailInput.value) === !1 ? emailInput.classList.add("is-invalid") : (emailInput.classList.add("is-valid"), isEmailOk = !0);
+  passwordInput.value.length >= 6 ? (passwordInput.classList.add("is-valid"), isPasswordOk = !0) : passwordInput.classList.add("is-invalid");
+  isFirstNameOk && isLastNameOk && isEmailOk && isPasswordOk && alert("Registered successfully");
 };
